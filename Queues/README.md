@@ -1,5 +1,7 @@
 # Queues
 
+[Full Project Specifications](https://coursera.cs.princeton.edu/algs4/assignments/queues/specification.php)
+
 ### Overview
 This project involves implementing two generic data structures, `Deque` and `RandomizedQueue`, using arrays and linked lists. These structures are designed to introduce concepts in generics, iterators, and memory-efficient operations.
 
