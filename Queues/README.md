@@ -1,6 +1,6 @@
 # Queues
 
-[Full Project Specifications](https://coursera.cs.princeton.edu/algs4/assignments/queues/specification.php)
+[Full Project Specification](https://coursera.cs.princeton.edu/algs4/assignments/queues/specification.php)
 
 ### Overview
 This project involves implementing two generic data structures, `Deque` and `RandomizedQueue`, using arrays and linked lists. These structures are designed to introduce concepts in generics, iterators, and memory-efficient operations.
@@ -34,3 +34,6 @@ A client program, `Permutation`, uses `RandomizedQueue` to read a list of string
 - `Deque`: Linear memory complexity. Each operation runs in constant time.
 - `RandomizedQueue`: Linear memory complexity. Each operation, excluding the iterator, runs in constant amortized time.
 - `Permutation`: Constant extra memory plus one `RandomizedQueue`. Runs in linear time relative to input size.
+
+### Input File Format
+- Separate each string in the list with a space.

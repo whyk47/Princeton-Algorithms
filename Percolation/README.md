@@ -1,6 +1,6 @@
 # Percolation Simulation
 
-[Full Project Specifications](https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php)
+[Full Project Specification](https://coursera.cs.princeton.edu/algs4/assignments/percolation/specification.php)
 
 ### Overview
 This project implements a Percolation system simulation using an n x n grid model. The goal is to estimate the percolation threshold. This model applies to scenarios like the flow of liquids through porous materials or electrical conductivity in composite materials.
@@ -31,7 +31,7 @@ When n is sufficiently large, there is a percolation threshold value p* such tha
 ### Usage
 Run the program with the following command
     ```bash
-    $ java -cp ".;..\algs4.jar" PercolationStats <grid size (n)> <number of trials (T)>
+    $ java -cp ".;..\algs4.jar" PercolationStats [grid size (n)] [number of trials (T)]
     ```
 
 ### Example

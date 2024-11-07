@@ -1,5 +1,7 @@
 # Collinear Points
 
+[Full Project Specification](https://coursera.cs.princeton.edu/algs4/assignments/collinear/specification.php)
+
 ### Overview
 This project is a pattern recognition program to identify line segments among points in a 2D plane. Given a set of distinct points, it identifies every maximal line segment (connecting four or more points) using brute-force and efficient sorting-based approaches. This application is relevant in computer vision and data analysis.
 
@@ -31,6 +33,10 @@ This project is a pattern recognition program to identify line segments among po
     (20000, 21000) -> (3000, 4000)
     ```
 ![Standard Draw](image.png)
+
+### Input File Format
+- First line: an integer n.
+- Next n lines: a pair of integers separated with a space, each between 0 and 32,767.
 
 ### Performance
 - `BruteCollinearPoints`: O(n^4) time, O(n) space.
