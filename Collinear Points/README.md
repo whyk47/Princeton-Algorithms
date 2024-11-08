@@ -39,5 +39,5 @@ This project is a pattern recognition program to identify line segments among po
 - Next n lines: a pair of integers separated with a space, each between 0 and 32,767.
 
 ### Performance
-- `BruteCollinearPoints`: O(n^4) time, O(n) space.
-- `FastCollinearPoints`: O(n^2logn) time, O(n) space.
+- `BruteCollinearPoints`: $O(n^4)$ time, $O(n)$ space.
+- `FastCollinearPoints`: $O(n^2\log{n})$ time, $O(n)$ space.

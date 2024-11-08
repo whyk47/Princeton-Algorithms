@@ -43,5 +43,5 @@ Run the program with the following command
     ```
 
 ### Performance
-- The constructor for Percolation has a time complexity of n².
+- The constructor for Percolation has a time complexity of $n^2$.
 - All other methods take constant time plus a constant number of union/find operations.

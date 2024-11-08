@@ -12,3 +12,4 @@
 2. Queues: Stacks, Queues, Generics, Iterators
 3. Collinear Points: Sorting
 4. Slider Puzzle Solver: Priority Queues, A* Search
+5. KD-trees: Red Black Trees, 2D Range Search, Nearest Neighbour Search
