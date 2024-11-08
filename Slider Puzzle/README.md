@@ -14,7 +14,7 @@ The 8-puzzle is a 3x3 grid with numbered tiles from 1 to 8 and one blank tile. T
 ### Usage
 - Running the solver:
     ```bash
-    $ java -cp ".;..\algs4.jar" Solver [path/to/test/file.txt]
+    $ java -cp ".;..\algs4.jar" Solver <test_file>
     ```
 - Example:
     ```bash

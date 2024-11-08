@@ -20,11 +20,11 @@ This project is a pattern recognition program to identify line segments among po
 ### Usage
 1. Running `BruteCollinearPoints`.
     ```bash
-    $ java -cp ".;..\algs4.jar" BruteCollinearPoints [path/to/test/file.txt]
+    $ java -cp ".;..\algs4.jar" BruteCollinearPoints <test_file>
     ```
 2. Running `FastCollinearPoints`.
     ```bash
-    $ java -cp ".;..\algs4.jar" FastCollinearPoints [path/to/test/file.txt]
+    $ java -cp ".;..\algs4.jar" FastCollinearPoints <test_file>
     ```
 ##### Example:
     ```bash

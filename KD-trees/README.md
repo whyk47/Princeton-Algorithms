@@ -30,11 +30,11 @@ It supports:
     ```
 2. Running `RangeSearchVisualizer`.
     ```bash
-    $ java -cp ".;..\algs4.jar" RangeSearchVisualizer [path/to/test/file.txt]
+    $ java -cp ".;..\algs4.jar" RangeSearchVisualizer <test_file>
     ```
 3. Running `NearestNeighborVisualizer`.
     ```bash
-    $ java -cp ".;..\algs4.jar" NearestNeighborVisualizer [path/to/test/file.txt]
+    $ java -cp ".;..\algs4.jar" NearestNeighborVisualizer <test_file>
     ```
 
 ### Example

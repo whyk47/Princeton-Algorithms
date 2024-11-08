@@ -19,19 +19,19 @@ When n is sufficiently large, there is a percolation threshold value p* such tha
     - Check if a site is open or full.
     - Determine if the system percolates.
     - Keep track of the number of open sites.
-##### The Percolation class uses Weighted Quick Union-Find (from WeightedQuickUnionUF in algs4.jar) to efficiently connect open sites and check for percolation. Worst case time complexity of each find opeation is log(N), where N is the number of cells in the grid i.e. n^2
+##### The Percolation class uses Weighted Quick Union-Find (from WeightedQuickUnionUF in algs4.jar) to efficiently connect open sites and check for percolation. Worst case time complexity of each find opeation is $\log(N)$, where N is the number of cells in the grid i.e. $n^2$
 
 - PercolationStats - Conducts a Monte Carlo simulation to estimate the percolation threshold:
     - Initializes blocked sites.
     - Opens random sites until the system percolates.
     - Calculates the fraction of open sites for multiple trials and computes the mean, standard deviation, and 95% confidence interval of the threshold.
 
-- UF - Separate implementation of weighted quick union find with path compression. This brings the worst case time complexity of each find opeation to log*(N).
+- UF - Separate implementation of weighted quick union find with path compression. This brings the worst case time complexity of each find opeation to $\log*{N}$.
 
 ### Usage
 Run the program with the following command
     ```bash
-    $ java -cp ".;..\algs4.jar" PercolationStats [grid size (n)] [number of trials (T)]
+    $ java -cp ".;..\algs4.jar" PercolationStats <grid size (n)> <number of trials (T)>
     ```
 
 ### Example

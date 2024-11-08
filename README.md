@@ -13,3 +13,4 @@
 3. Collinear Points: Sorting
 4. Slider Puzzle Solver: Priority Queues, A* Search
 5. KD-trees: Red Black Trees, 2D Range Search, Nearest Neighbour Search
+6. WordNet: Directed Acyclic Graphs

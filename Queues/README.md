@@ -11,7 +11,7 @@ A client program, `Permutation`, uses `RandomizedQueue` to read a list of string
 ### Usage
 1. Run `Permutation` with the following command.
     ```bash
-    $ Get-Content [path/to/testfile.txt] | java -cp ".;..\algs4.jar" Permutation [length_of_permutation]
+    $ Get-Content <test_file> | java -cp ".;..\algs4.jar" Permutation <length_of_permutation>
     ```
     Example:
     ```bash
