@@ -9,6 +9,7 @@ WordNet is a lexical database that groups English words into sets of synonyms ca
 ### Classes
 - `WordNet`: models the WordNet digraph and provides methods to interact with it.
 - `SAP`: computes the shortest ancestral path between vertices in a digraph.
+    - Time Complexity: $O(E + V)$,  where $E$ is the number of edges and $V$ is the number of vertices. 
 - `Outcast`: identifies the noun that is least related to others in a given list.
 
 ### Usage
