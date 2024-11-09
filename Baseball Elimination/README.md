@@ -16,11 +16,11 @@ The Baseball Elimination Problem determines which teams in a sports division are
 ### Usage
 - Running `BaseballElimination`.
     ```bash 
-    java -cp ".;..\algs4.jar" BaseballElimination <test_file>
+    $ java -cp ".;..\algs4.jar" BaseballElimination <test_file>
     ```
 - Example:
     ```bash
-    java -cp ".;..\algs4.jar" BaseballElimination tests/teams54.txt
+    $ java -cp ".;..\algs4.jar" BaseballElimination tests/teams54.txt
     Team0 is not eliminated
     Team1 is not eliminated
     Team2 is not eliminated
@@ -57,5 +57,15 @@ The Baseball Elimination Problem determines which teams in a sports division are
     1. s to game node `i-j`: Capacity set to `g[i][j]` (games left between `i` and `j`).
     2. Game node `i-j` to team nodes `i` and `j`: Unlimited capacity.
     3. Team node `i` to `t`: Capacity set to `w[x] + r[x] - w[i]` (Maximum no. of games team `i` can win before team `x` is eliminated).
-- If max flow from `s` to `t` does not saturate all edges from `s`, team `x` is eliminated by a subset of teams forming a cut.
+- **If max flow from `s` to `t` does not saturate all edges from `s`, team `x` is eliminated by a subset of teams forming a cut.**
+
+### Performance: 
+- Memory Usage:
+    - The flow network has O(n^2) vertices (teams and games) and O(n^2) edges.
+- Time Complexity:
+    - Constructing the flow network: O(n^2).
+    - Solving the max-flow problem: O(V * E^2), where V = O(n^2) and E = O(n^2).
+    - Total worst-case time complexity: O(n^5).
+
+
 

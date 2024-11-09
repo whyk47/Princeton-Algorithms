@@ -13,11 +13,11 @@ Seam carving is a content-aware image resizing technique that reduces the width 
 ### Usage
 - Running `SeamCarver`.
     ```bash
-    java -cp ".;..\algs4.jar" SeamCarver <input_image> <output_width> <output_height> <output_file>
+    $ java -cp ".;..\algs4.jar" SeamCarver <input_image> <output_width> <output_height> <output_file>
     ```
 - Example:
     ```bash
-    java -cp ".;..\algs4.jar" SeamCarver tests/image.png 400 200 tests/edited.png
+    $ java -cp ".;..\algs4.jar" SeamCarver tests/image.png 400 200 tests/edited.png
     ```
 
 ### Input Format
