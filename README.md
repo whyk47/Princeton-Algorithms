@@ -15,4 +15,5 @@
 5. KD-trees: Red Black Trees, 2D Range Search, Nearest Neighbour Search
 6. WordNet: Directed Acyclic Graphs, Shortest Ancesteral Path
 7. Seam Carving: Shortest Path, Dynamic Programming
-8. Baseball Elimination: Max Flow/Min Cut
+8. Baseball Elimination: Max Flow/Min Cut, Ford-Fulkerson Algorithm
+

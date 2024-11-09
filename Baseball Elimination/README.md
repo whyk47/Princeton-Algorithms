@@ -33,7 +33,7 @@ The Baseball Elimination Problem determines which teams in a sports division are
 - Format:
     ```
     <number of teams>
-    <team_name> <wins> <losses> <remaining_games> <remaining_against_each_team>
+    <team, i> <wins, w[i]> <losses, l[i]> <remaining_games, r[i]> <games_remaining_against_each_team_j, g[i][j]>
     ...
     ```
 - Example:
@@ -44,3 +44,18 @@ The Baseball Elimination Problem determines which teams in a sports division are
     New_York      78 78 6 6 0 0 0
     Montreal      77 82 3 1 2 0 0
     ```
+
+### Maxflow Formulation
+![Flow Network](image.png)
+- Suppose we want to find if team `x` is non-trivially eliminated.
+- Layers:
+    1. Source `s`: Connected to game nodes.
+    2. Game nodes `i-j`: Represent the remaining games between teams `i` and `j`.
+    3. Team nodes `i`: Represent each team except the team being checked for elimination (`x`).
+    4. Sink `t`: Connected to team nodes to limit their maximum possible wins.
+- Edge Capacities:
+    1. s to game node `i-j`: Capacity set to `g[i][j]` (games left between `i` and `j`).
+    2. Game node `i-j` to team nodes `i` and `j`: Unlimited capacity.
+    3. Team node `i` to `t`: Capacity set to `w[x] + r[x] - w[i]` (Maximum no. of games team `i` can win before team `x` is eliminated).
+- If max flow from `s` to `t` does not saturate all edges from `s`, team `x` is eliminated by a subset of teams forming a cut.
+
