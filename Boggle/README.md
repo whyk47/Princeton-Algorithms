@@ -61,3 +61,20 @@ The solver is built for raw speed, and is able to process thousands of random 4x
     R S A T
     ```
 
+### Performance
+Given an m x n Boggle board and a dictionary with D words of average length L, the time and memory complexities are determined by the following:
+1. Trie Construction:
+    - Time: $O(DL)$
+    - Memory: $O(DL)$
+2. DFS:
+    - Time: $O(mm \times 8^L)$
+    - The traversal starts from each of the $mn$ cells on the board.
+    - In the worst case, each DFS call has up to 8 possible moves (horizontal, vertical, diagonal), and the maximum depth of the DFS is the maximum word length L.
+    - However, in practice, this complexity is reduced significantly due to:
+        - Early termination when a prefix is not found in the trie.
+        - Restriction on revisiting the same cell in a single word path.
+        - Maximum L typically being small (e.g., 16 in a standard 4x4 Boggle board).
+    - Memory: $O(mn + WL)$, where W is the number of valid words.
+        - Visited cells are marked with a boolean array of size mn.
+        - Maximum depth of the DFS stack is the maximum length of a word in the dictionary, which is L.
+        - Results storage for W words of average length L. 
